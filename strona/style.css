@@ -1,0 +1,160 @@
+body {
+  font-family: Arial, sans-serif;
+transform: scale(0.9);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+  background-size: 1400% 1400%;
+  animation: rainbow 40s ease infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header {
+  background-color: #0B0C0D;
+  color: #ffff;
+  padding: 20px;
+  width: 100%;
+}
+header h1 {
+text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+}
+
+nav li {
+  display: block;
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+main {
+  margin: 20px;
+  background-color: #fff;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+main ul li {
+display: inline-block;
+margin-right: 10px;
+margin-bottom: 10px;
+}
+
+main ul li a {
+display: inline-block;
+padding: 10px;
+background-color: #333;
+color: #fff;
+text-decoration: none;
+}
+
+main ul li a:hover {
+background-color: #667;
+}
+
+
+main h1, main h2, main h3 {
+text-align: center;
+}
+
+h2 {
+  margin-top: 40px;
+}
+
+form label {
+  display: block;
+  margin-top: 20px;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+  display: block;
+  margin-top: 10px;
+  width: 100%; 
+  box-sizing: border-box; 
+  padding: 10px;
+  font-size: 16px; 
+}
+
+form input[type="submit"] {
+  margin-top: 20px;
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 40px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+li h3 {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px; 
+}
+
+button:hover {
+  background-color: #667;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) {
+  header {
+    width: 50%;
+  }
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  main {
+    width: 50%;
+  }
+}
